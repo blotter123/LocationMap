@@ -23,6 +23,9 @@
 		ACFF4A9A16D0675400FC4D3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFF4A7516D0675400FC4D3B /* Foundation.framework */; };
 		ACFF4AA216D0675400FC4D3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACFF4AA016D0675400FC4D3B /* InfoPlist.strings */; };
 		ACFF4AA516D0675400FC4D3B /* MapLocationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFF4AA416D0675400FC4D3B /* MapLocationTests.m */; };
+		ACFF4AAF16D0676600FC4D3B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFF4AAE16D0676600FC4D3B /* MapKit.framework */; };
+		ACFF4AB116D0677000FC4D3B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACFF4AB016D0677000FC4D3B /* CoreLocation.framework */; };
+		ACFF4AB416D082F700FC4D3B /* BTLCLLocationManagerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFF4AB316D082F700FC4D3B /* BTLCLLocationManagerDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		ACFF4AA116D0675400FC4D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACFF4AA316D0675400FC4D3B /* MapLocationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapLocationTests.h; sourceTree = "<group>"; };
 		ACFF4AA416D0675400FC4D3B /* MapLocationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapLocationTests.m; sourceTree = "<group>"; };
+		ACFF4AAE16D0676600FC4D3B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ACFF4AB016D0677000FC4D3B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ACFF4AB216D082F700FC4D3B /* BTLCLLocationManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLCLLocationManagerDelegate.h; sourceTree = "<group>"; };
+		ACFF4AB316D082F700FC4D3B /* BTLCLLocationManagerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLCLLocationManagerDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFF4AB116D0677000FC4D3B /* CoreLocation.framework in Frameworks */,
+				ACFF4AAF16D0676600FC4D3B /* MapKit.framework in Frameworks */,
 				ACFF4A7416D0675400FC4D3B /* UIKit.framework in Frameworks */,
 				ACFF4A7616D0675400FC4D3B /* Foundation.framework in Frameworks */,
 				ACFF4A7816D0675400FC4D3B /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +96,8 @@
 		ACFF4A6416D0675400FC4D3B = {
 			isa = PBXGroup;
 			children = (
+				ACFF4AB016D0677000FC4D3B /* CoreLocation.framework */,
+				ACFF4AAE16D0676600FC4D3B /* MapKit.framework */,
 				ACFF4A7916D0675400FC4D3B /* MapLocation */,
 				ACFF4A9D16D0675400FC4D3B /* MapLocationTests */,
 				ACFF4A7216D0675400FC4D3B /* Frameworks */,
@@ -123,6 +134,8 @@
 				ACFF4A8E16D0675400FC4D3B /* BTLViewController.h */,
 				ACFF4A8F16D0675400FC4D3B /* BTLViewController.m */,
 				ACFF4A7A16D0675400FC4D3B /* Supporting Files */,
+				ACFF4AB216D082F700FC4D3B /* BTLCLLocationManagerDelegate.h */,
+				ACFF4AB316D082F700FC4D3B /* BTLCLLocationManagerDelegate.m */,
 			);
 			path = MapLocation;
 			sourceTree = "<group>";
@@ -274,6 +287,7 @@
 				ACFF4A8016D0675400FC4D3B /* main.m in Sources */,
 				ACFF4A8416D0675400FC4D3B /* BTLAppDelegate.m in Sources */,
 				ACFF4A9016D0675400FC4D3B /* BTLViewController.m in Sources */,
+				ACFF4AB416D082F700FC4D3B /* BTLCLLocationManagerDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

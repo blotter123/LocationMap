@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
+#import "BTLCLLocationManagerDelegate.h"
 
-@interface BTLViewController : UIViewController
+
+@interface BTLViewController : UIViewController <LocationControllerDelegate> //<CLLocationManagerDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+//@property (strong, nonatomic) BTLCLLocationManagerDelegate *sharedLocationManager;
 
 @end

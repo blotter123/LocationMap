@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+#import "BTLCLLocationManagerDelegate.h"
+
 @interface BTLAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) BTLCLLocationManagerDelegate *sharedLocationManager;
 
 @end
