@@ -53,7 +53,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    [[BTLCLLocationManagerDelegate sharedLocationManager].locationManager startMonitoringSignificantLocationChanges];
+    BTLCLLocationManagerDelegate *sharedLocationManager = [BTLCLLocationManagerDelegate sharedLocationManager];
+    if ((sharedLocationManager.locationManager.locationServicesEnabled)== NO) {
+        UIAlertView *servicesDisabledAlert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled" message:@"You currently have all location services for this device disabled. If you proceed, you will be asked to confirm whether location services should be reenabled." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [servicesDisabledAlert show];
+    }
+    [sharedLocationManager.locationManager startMonitoringSignificantLocationChanges];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

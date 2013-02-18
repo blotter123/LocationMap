@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+//instance of singelton class to be shared between all classes
 @property (strong, nonatomic) BTLCLLocationManagerDelegate *sharedLocationManager;
 
 @end

@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACF1E76F16D13A34000ADDFC /* LocationTest.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LocationTest.gpx; sourceTree = "<group>"; };
 		ACFF4A6F16D0675400FC4D3B /* MapLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFF4A7316D0675400FC4D3B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		ACFF4A7516D0675400FC4D3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +97,7 @@
 		ACFF4A6416D0675400FC4D3B = {
 			isa = PBXGroup;
 			children = (
+				ACF1E76F16D13A34000ADDFC /* LocationTest.gpx */,
 				ACFF4AB016D0677000FC4D3B /* CoreLocation.framework */,
 				ACFF4AAE16D0676600FC4D3B /* MapKit.framework */,
 				ACFF4A7916D0675400FC4D3B /* MapLocation */,
@@ -462,6 +464,7 @@
 				ACFF4AAA16D0675400FC4D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACFF4AAB16D0675400FC4D3B /* Build configuration list for PBXNativeTarget "MapLocationTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +473,7 @@
 				ACFF4AAD16D0675400FC4D3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

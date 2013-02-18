@@ -14,12 +14,10 @@
 @synthesize locationManager, location, delegate;
 
 
-
-
-
 #pragma mark Singleton Methods
 static BTLCLLocationManagerDelegate *sharedLocationManager = nil;
 
+//instantiate an instance of the sharedLocationManager
 + (id)sharedLocationManager {
     NSLog(@"sharedLocationManager gets called");
     @synchronized(self) {
@@ -32,6 +30,7 @@ static BTLCLLocationManagerDelegate *sharedLocationManager = nil;
 
 
 
+//initalize the properties of the shared locationManager and set the delegate
 - (id)init
 {
     self = [super init];
@@ -54,7 +53,7 @@ static BTLCLLocationManagerDelegate *sharedLocationManager = nil;
 #pragma CLLLocationManagerDelegateMethods
 
 
-
+//implementation of the lcoationManager method of the CLLocationManager protocol
 - (void)locationManager:(CLLocationManager*)manager didUpdateToLocation:(CLLocation*)newLocation
                                                     fromLocation:(CLLocation*)oldLocation
 

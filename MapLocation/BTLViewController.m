@@ -38,7 +38,7 @@
 
 #pragma mark - CLLocationManagerDelegate methods
 
-
+//delegate method that gets called by the singelton class BTLCLLocationManagerDelegate once a location update is detected
 - (void)locationUpdate:(CLLocation *)location
 {
     NSLog(@"locationUpdate gets called");
@@ -57,6 +57,8 @@
 }
 */
 
+
+// method to draw pins to the map based on the location passed down from the shared location manager
 - (void)addPinToMapAtLocation:(CLLocation *)location
 {
     MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
