@@ -23,11 +23,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    //BTLCLLocationManagerDelegate* sharedLocationManager = [BTLCLLocationManagerDelegate sharedLocationManager];
-    //self.locationManager = [[CLLocationManager alloc] init];
+    
+    // set the delegate property of the locationManger to be the view controller
     [BTLCLLocationManagerDelegate sharedLocationManager].delegate = self;
-    //sharedLocationManager.delegate = self;
-    //[sharedLocationManager startMonitoringSignificantLocationChanges];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -47,24 +46,14 @@
     
 }
 
-/*
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    CLLocation *location = [locations lastObject];
-    NSLog(@"lat: %f, lon:%f", location.coordinate.latitude, location.coordinate.longitude);
-    [self addPinToMapAtLocation:location];
-    
-}
-*/
-
 
 // method to draw pins to the map based on the location passed down from the shared location manager
 - (void)addPinToMapAtLocation:(CLLocation *)location
 {
     MKPointAnnotation *pin = [[MKPointAnnotation alloc] init];
     pin.coordinate = location.coordinate;
-    pin.title = @"foo";
-    pin.subtitle = @"bar";
+    pin.title = @"current";
+    pin.subtitle = @"location";
     [self.mapView addAnnotation:pin];
     MKCoordinateRegion region = { { 0.0f, 0.0f }, { 0.0f, 0.0f } };
     region.center = location.coordinate;

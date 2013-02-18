@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MapLocation/BTLCLLocationManagerDelegate.m"
-         timestampString = "382888311.250696"
+         timestampString = "382893375.670695"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "28"
-         endingLineNumber = "28"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
          landmarkName = "+sharedLocationManager"
          landmarkType = "5">
       </FileBreakpoint>
